@@ -5,6 +5,7 @@ import (
 	"log"
 	"math/rand"
 	"time"
+	"fmt"
 )
 
 var max_brightness uint8 = 150
@@ -18,6 +19,7 @@ func main() {
 	var err error
 
 	// Create a new Piglow
+	fmt.Printf("Running PiGlow\n")
 	p, err = piglow.NewPiglow()
 	if err != nil {
 		log.Fatal("Couldn't create a Piglow: ", err)
